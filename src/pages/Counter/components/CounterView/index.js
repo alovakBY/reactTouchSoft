@@ -1,7 +1,6 @@
 import { memo } from "react";
 
 const CounterView = memo(({ countValue, handleIncrement, handleDicrement }) => {
-    console.log("render");
     return (
         <div>
             <div>Value: {countValue}</div>

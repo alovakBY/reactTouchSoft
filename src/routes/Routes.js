@@ -1,6 +1,8 @@
 import { Routes, Route } from "react-router-dom";
+
 import { CounterContainer } from "../pages/Counter/containers/CounterContainer";
 import { FunctionalCounterContainer } from "../pages/FunctionalCounter/containers/FunctionalCounterContainer";
+
 import { ROUTE_NAMES } from "./routeNames";
 
 function Router() {

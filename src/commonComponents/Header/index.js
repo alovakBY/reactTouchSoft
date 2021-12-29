@@ -1,5 +1,6 @@
-import { ROUTE_NAMES } from "../../routes/routeNames";
 import { NavLink } from "react-router-dom";
+
+import { ROUTE_NAMES } from "../../routes/routeNames";
 
 export function Header() {
     return (
