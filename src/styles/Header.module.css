@@ -1,0 +1,45 @@
+.header {
+	height: 90px;
+	padding: 0 110px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+.navigation {
+	display: flex;
+}
+
+.navigation li + li {
+	margin-left: 33px;
+}
+
+.navigation a {
+	color: black;
+}
+
+.navigation a:hover {
+	border-bottom: 2px solid black;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+}
+
+.item > div {	
+	color: #6F1EAA;
+}
+
+.item > button {
+	margin-left: 33px;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	cursor: pointer;
+}

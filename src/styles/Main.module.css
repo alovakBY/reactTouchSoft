@@ -1,0 +1,24 @@
+.main {
+	padding: 100px 0 250px;
+	background: url('../static/images/mainBg.jpg') no-repeat center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title{
+	width: 565px;
+	font-size: 55px;
+	line-height: 67px;
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.text {
+	width: 491px;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	margin-bottom: 23px;
+}
