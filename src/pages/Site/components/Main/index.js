@@ -7,15 +7,15 @@ export function Main() {
         <section className={s.main}>
             <h3 className={s.title}>The pet pharmacy humans are jealous of.</h3>
             <div className={s.text}>
-                5 stars on{" "}
+                5 stars on
                 <a href="https://www.yelp.com/" target="_blank">
                     Yelp
                 </a>
                 ,
                 <a href="https://www.google.com/" target="_blank">
                     Google
-                </a>{" "}
-                and{" "}
+                </a>
+                and
                 <a href="https://www.facebook.com/" target="_blank">
                     Facebook
                 </a>

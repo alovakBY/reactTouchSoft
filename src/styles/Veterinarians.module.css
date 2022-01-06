@@ -1,0 +1,47 @@
+.veterinarians {
+	padding: 60px 150px 45px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.veterinariansItem {
+	max-width: 45%;
+}
+
+.title {
+	font-style: normal;
+	font-size: 44px;
+	line-height: 53px;
+	margin-bottom: 25px;
+}
+
+.img {
+	display: flex;
+	justify-content: center;
+}
+
+.infoItem{
+	padding-bottom: 30px;
+}
+
+.infoItem + .infoItem {
+	padding-top: 30px;
+	border-top: 1px solid #F7A500;
+}
+
+.infoItemTitle {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	color: #6F1EAA;
+	margin-bottom: 20px;
+}
+
+.infoItemText {
+	font-size: 16px;
+	line-height: 23px;
+}
+
+.infoItemPS {
+	margin-top: 10px;
+}

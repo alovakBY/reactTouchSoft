@@ -16,7 +16,9 @@ export function Header({ LINKS }) {
             </nav>
             <img src={logo} alt="logo" className={s.logo} />
             <div className={s.item}>
-                <div>Veterinarian login</div>
+                <div>
+                    <a href="#">Veterinarian login</a>
+                </div>
                 <Button text="Try Mixlab" />
             </div>
         </header>
