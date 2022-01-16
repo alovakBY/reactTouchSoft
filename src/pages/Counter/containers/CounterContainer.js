@@ -1,38 +1,29 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 
-import { CounterView } from "../components/CounterView";
+import { Layout } from "../components/Layout";
 
-class CounterContainer extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            countValue: 0,
-        };
+function CounterContainer() {
+  const [count, setCountValue] = useState(0);
+
+  const handleIncrement = useCallback(() => {
+    setCountValue((state) => state + 1);
+  }, []);
+
+  const handleDicrement = useCallback(() => {
+    if (count > 0) {
+      setCountValue((state) => state - 1);
     }
+  }, [count]);
 
-    handleIncrement = () => {
-        this.setState({
-            countValue: this.state.countValue + 1,
-        });
-    };
-
-    handleDicrement = () => {
-        if (this.state.countValue > 0) {
-            this.setState({
-                countValue: this.state.countValue - 1,
-            });
-        }
-    };
-
-    render() {
-        return (
-            <CounterView
-                countValue={this.state.countValue}
-                handleIncrement={this.handleIncrement}
-                handleDicrement={this.handleDicrement}
-            />
-        );
-    }
+  return (
+    <div style={{ padding: "10px" }}>
+      <Layout
+        countValue={count}
+        handleIncrement={handleIncrement}
+        handleDicrement={handleDicrement}
+      />
+    </div>
+  );
 }
 
 export { CounterContainer };

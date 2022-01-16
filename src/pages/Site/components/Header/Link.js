@@ -1,7 +1,7 @@
 export function Link({ link }) {
-    return (
-        <li>
-            <a href="#">{link}</a>
-        </li>
-    );
+  return (
+    <li>
+      <a href={"#" + link}>{link}</a>
+    </li>
+  );
 }

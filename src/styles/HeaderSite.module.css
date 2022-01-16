@@ -1,0 +1,189 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 14px;
+  left: 0px;
+  z-index: 500;
+  height: 90px;
+  background-color: white;
+}
+
+.container {
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 110px;
+  margin: 0 auto;
+}
+
+.burgerButton {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  position: relative;
+}
+
+.burgerButton span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 35px;
+  height: 2px;
+  background-color: black;
+  transition: transform 0.2s;
+}
+
+.burgerButton span::before,
+.burgerButton span::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: black;
+  transition: transform 0.3s;
+}
+
+.burgerButton span::before {
+  top: 10px;
+}
+
+.burgerButton span::after {
+  top: -10px;
+}
+
+.burgerMenu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: -250px;
+  background-color: white;
+  padding: 20px 10px 40px 20px;
+  height: 100vh;
+  width: 250px;
+  transition: left 0.3s;
+  overflow-y: auto;
+}
+
+.burgerMenu.activ {
+  left: 0;
+}
+
+.burgerMenu > ul > li {
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.burgerMenu > ul > li > a {
+  font-size: 30px;
+  color: black;
+}
+
+.menuNavigation {
+  flex: 0 0 38%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation li + li {
+  margin-left: 15px;
+}
+
+.navigation a {
+  color: black;
+}
+
+.navigation a:hover {
+  border-bottom: 2px solid black;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogin {
+  color: #6f1eaa;
+}
+
+.buttonHeader > button {
+  margin-left: 33px;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.logo > a > img {
+  width: 100%;
+}
+
+@media all and (max-width: 1280px) {
+  .header {
+    height: 60px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .burgerButton {
+    display: block;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+
+  .menuNavigation {
+    display: none;
+  }
+
+  .activ span {
+    background: 0 0;
+  }
+  .activ span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .activ span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .burgerMenu {
+    top: 45px;
+  }
+
+  .header {
+    height: 45px;
+  }
+
+  .buttonHeader {
+    display: none;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .logo {
+    max-width: 100px;
+    left: 45%;
+  }
+  .headerLogin > a {
+    font-size: 12px;
+  }
+}
