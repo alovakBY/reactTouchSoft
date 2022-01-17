@@ -1,41 +1,31 @@
-import React, { useState, useCallback } from "react";
-import { v4 as uuidv4 } from "uuid";
+import { useState, useCallback } from "react";
 
-import { Layout } from "../components/Layout";
+import { CounterView } from "../components/CounterView";
 
-function CounterContainer() {
-    const [counters, setCounters] = useState([]);
+export const CounterContainer = () => {
+  const [countValue, setCounterCount] = useState(0);
 
-    const handleCreateCounter = useCallback(() => {
-        console.log(counters);
-        const id = uuidv4();
-        const newCounter = {
-            count: 0,
-            id,
-        };
-        setCounters([...counters, newCounter]);
+  const handleIncrement = useCallback(() => {
+    setCounterCount((state) => {
+      state += 1;
+      return state;
     });
+  }, []);
 
-    // const handleIncrement = useCallback(() => {
-    //   setCountValue((state) => state + 1);
-    // }, []);
+  const handleDecrement = useCallback(() => {
+    if (countValue > 0) {
+      setCounterCount((state) => {
+        state -= 1;
+        return state;
+      });
+    }
+  }, [countValue]);
 
-    // const handleDicrement = useCallback(() => {
-    //   if (count > 0) {
-    //     setCountValue((state) => state - 1);
-    //   }
-    // }, [count]);
-
-    return (
-        <div style={{ padding: "10px" }}>
-            <button onClick={handleCreateCounter}>Add counter</button>
-            <Layout
-                counters={counters}
-                // handleIncrement={handleIncrement}
-                // handleDicrement={handleDicrement}
-            />
-        </div>
-    );
-}
-
-export { CounterContainer };
+  return (
+    <CounterView
+      countValue={countValue}
+      handleIncrement={handleIncrement}
+      handleDecrement={handleDecrement}
+    />
+  );
+};

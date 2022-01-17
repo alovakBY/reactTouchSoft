@@ -2,7 +2,7 @@
   max-width: 400px;
   margin: 5px;
   padding: 10px;
-  /* border: 2px solid black; */
+  border: 2px solid black;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -32,7 +32,7 @@
 }
 
 .parityFalse {
-  background-color: rgb(243, 164, 164);
+  background-color: rgb(156, 145, 255);
 }
 
 .buttons {
