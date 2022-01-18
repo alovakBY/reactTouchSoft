@@ -9,15 +9,17 @@ import { Router } from "./routes/Routes";
 
 const store = configureStore();
 
+// console.log(store.getState());
+
 ReactDOM.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <Provider store={store}>
-                <MainLayout>
-                    <Router />
-                </MainLayout>
-            </Provider>
-        </BrowserRouter>
-    </React.StrictMode>,
-    document.getElementById("root")
+  <React.StrictMode>
+    <BrowserRouter>
+      <Provider store={store}>
+        <MainLayout>
+          <Router />
+        </MainLayout>
+      </Provider>
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
