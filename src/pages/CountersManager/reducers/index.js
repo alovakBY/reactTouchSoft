@@ -20,12 +20,34 @@ export const countersManagerReducer = handleActions(
         counters: [...state.counters, newCounter],
       };
     },
+    [actions.DELETE_COUNTER]: (state, { payload }) => {
+      const copy = [...state.counters];
+      const index = copy.findIndex((counter) => {
+        return counter.id === payload;
+      });
+      copy.splice(index, 1);
+      return {
+        ...state,
+        counters: copy,
+      };
+    },
     [actions.INCREMENT_COUNTER]: (state, { payload }) => {
       return {
         ...state,
         counters: state.counters.map((counter) => {
           counter.id === payload
             ? (counter.count += 1)
+            : (counter.count = counter.count);
+          return counter;
+        }),
+      };
+    },
+    [actions.DECREMENT_COUNTER]: (state, { payload }) => {
+      return {
+        ...state,
+        counters: state.counters.map((counter) => {
+          counter.id === payload
+            ? (counter.count -= 1)
             : (counter.count = counter.count);
           return counter;
         }),

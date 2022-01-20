@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { CounterContainer } from "../pages/Counter/containers/CounterContainer";
 import { CounterManagerContainer } from "../pages/CountersManager/containers/CounterManagerContainer";
 import { SiteContainer } from "../pages/Site/containers/SiteContainer";
+import { TodoManagerContainer } from "../pages/Todo/containers/TodoManagerContainer";
 
 import { ROUTE_NAMES } from "./routeNames";
 
@@ -13,6 +14,10 @@ function Router() {
       <Route
         path={ROUTE_NAMES.COUNTERS_MANAGER}
         element={<CounterManagerContainer />}
+      />
+      <Route
+        path={ROUTE_NAMES.TODO_MANAGER}
+        element={<TodoManagerContainer />}
       />
       <Route path={ROUTE_NAMES.SITE} element={<SiteContainer />} />
     </Routes>

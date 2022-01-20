@@ -13,7 +13,6 @@ export const ManagerLayout = ({
     <div>
       <div>
         <button onClick={handleCreateCounter}>Add counter</button>
-        {/* <button onClick={handleDeleteCounter}>Add counter</button> */}
       </div>
       <div style={{ padding: "5px", display: "flex", flexWrap: "wrap" }}>
         {counters.map(({ count, id }) => {
