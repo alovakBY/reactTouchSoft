@@ -1,5 +1,7 @@
 import { useState, useCallback, memo } from "react";
 
+import s from "./CreateTodo.module.css";
+
 export const CreateTodo = memo(({ handleAddTodo }) => {
   const [textInput, setTextInput] = useState("");
 
@@ -16,7 +18,12 @@ export const CreateTodo = memo(({ handleAddTodo }) => {
   return (
     <div style={{ padding: "5px" }}>
       <form>
-        <input type="text" onChange={handleChangeTextTodo} value={textInput} />
+        <input
+          className={s.input}
+          type="text"
+          onChange={handleChangeTextTodo}
+          value={textInput}
+        />
         <button type="submit" onClick={handleCreateTodo}>
           Add todo
         </button>

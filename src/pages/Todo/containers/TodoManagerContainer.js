@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { ADD_TODO } from "../actions";
+import * as actions from "../actions";
 
 import { TodoLayout } from "../components/TodoLayout";
 
@@ -9,21 +9,40 @@ export function TodoManagerContainer() {
   const { todos } = useSelector((state) => state.todosManagerPage);
 
   const handleAddTodo = useCallback((text) => {
-    dispatch(ADD_TODO(text));
+    dispatch(actions.ADD_TODO(text));
+  }, []);
+
+  const handleDeleteTodo = useCallback((id) => {
+    dispatch(actions.DELETE_TODO(id));
+  }, []);
+
+  const handleChangeTodo = useCallback((id) => {
+    dispatch(actions.CHANGE_TODO(id));
+  }, []);
+
+  const handleSaveChangedText = useCallback((id, text) => {
+    dispatch(
+      actions.SAVE_CHANGED_TEXT({
+        id,
+        text,
+      })
+    );
+  }, []);
+
+  const handleCancelChangedText = useCallback((id) => {
+    dispatch(actions.CANCEL_CHANGED_TEXT(id));
   }, []);
 
   return (
     <div>
-      {todos.map(({ text }, index) => {
-        return (
-          <div>
-            <div>
-              {index + 1}. {text}
-            </div>
-          </div>
-        );
-      })}
-      <TodoLayout handleAddTodo={handleAddTodo} />
+      <TodoLayout
+        todos={todos}
+        handleAddTodo={handleAddTodo}
+        handleDeleteTodo={handleDeleteTodo}
+        handleChangeTodo={handleChangeTodo}
+        handleSaveChangedText={handleSaveChangedText}
+        handleCancelChangedText={handleCancelChangedText}
+      />
     </div>
   );
 }

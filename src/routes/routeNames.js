@@ -3,4 +3,5 @@ export const ROUTE_NAMES = {
   COUNTERS_MANAGER: "/counters",
   TODO_MANAGER: "/todo",
   SITE: "/site",
+  POKEMONS: "/pokemons",
 };

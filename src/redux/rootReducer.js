@@ -5,4 +5,5 @@ import { todosManagerReducer } from "../pages/Todo/reducers";
 export const rootReducer = combineReducers({
   countersManagerPage: countersManagerReducer,
   todosManagerPage: todosManagerReducer,
+  PokemonsPage: pokemonsReducer,
 });
