@@ -1,7 +1,10 @@
-export const Pokemons = ({ handleGetPokemons }) => {
+import { memo } from "react";
+import { NavLink } from "react-router-dom";
+
+export const Pokemons = memo(({ name }) => {
     return (
         <div>
-            <button onClick={handleGetPokemons}>pokemons</button>
+            <NavLink to={`${name}`}>{name}</NavLink>
         </div>
     );
-};
+});

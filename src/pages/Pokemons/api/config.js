@@ -1,5 +1,9 @@
 import axios from "axios";
 
-export default axios.create({
-  baseURL: "https://pokeapi.co/api/v2",
-});
+const BASE_URL = "https://pokeapi.co/api/v2";
+
+const config = {
+    baseURL: BASE_URL,
+};
+
+export default axios.create(config);
