@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactTouchSoft/static/css/main.e2d576a9.css",
-    "main.js": "/reactTouchSoft/static/js/main.d46cf8d3.js",
+    "main.js": "/reactTouchSoft/static/js/main.decffaeb.js",
     "static/media/AboutUs.png": "/reactTouchSoft/static/media/AboutUs.297d96662ebf3a41596a.png",
     "static/media/mainBg.jpg": "/reactTouchSoft/static/media/mainBg.9e01321e3e215489a969.jpg",
     "static/media/veterinarians.png": "/reactTouchSoft/static/media/veterinarians.e2736581d20bb41b09d7.png",
@@ -10,10 +10,10 @@
     "static/media/logo.svg": "/reactTouchSoft/static/media/logo.5f8691bd57aad497f947911f4e96470f.svg",
     "index.html": "/reactTouchSoft/index.html",
     "main.e2d576a9.css.map": "/reactTouchSoft/static/css/main.e2d576a9.css.map",
-    "main.d46cf8d3.js.map": "/reactTouchSoft/static/js/main.d46cf8d3.js.map"
+    "main.decffaeb.js.map": "/reactTouchSoft/static/js/main.decffaeb.js.map"
   },
   "entrypoints": [
     "static/css/main.e2d576a9.css",
-    "static/js/main.d46cf8d3.js"
+    "static/js/main.decffaeb.js"
   ]
 }
