@@ -1,10 +1,19 @@
 {
   "files": {
-    "main.js": "/reactTouchSoft/static/js/main.c779948f.js",
-    "index.html": "/reactTouchSoft/index.html",
-    "main.c779948f.js.map": "/reactTouchSoft/static/js/main.c779948f.js.map"
+    "main.css": "/static/css/main.8b1333e2.css",
+    "main.js": "/static/js/main.56076d4e.js",
+    "static/media/AboutUs.png": "/static/media/AboutUs.297d96662ebf3a41596a.png",
+    "static/media/mainBg.jpg": "/static/media/mainBg.9e01321e3e215489a969.jpg",
+    "static/media/veterinarians.png": "/static/media/veterinarians.e2736581d20bb41b09d7.png",
+    "static/media/inTheWildBg.png": "/static/media/inTheWildBg.6ef4a65e5f7bddd784bf.png",
+    "static/media/blog.png": "/static/media/blog.acc12c2d4644d6820db8.png",
+    "static/media/logo.svg": "/static/media/logo.5f8691bd57aad497f947911f4e96470f.svg",
+    "index.html": "/index.html",
+    "main.8b1333e2.css.map": "/static/css/main.8b1333e2.css.map",
+    "main.56076d4e.js.map": "/static/js/main.56076d4e.js.map"
   },
   "entrypoints": [
-    "static/js/main.c779948f.js"
+    "static/css/main.8b1333e2.css",
+    "static/js/main.56076d4e.js"
   ]
 }
