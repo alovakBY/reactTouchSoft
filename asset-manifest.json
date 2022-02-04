@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/reactTouchSoft/static/css/main.e2d576a9.css",
-    "main.js": "/reactTouchSoft/static/js/main.2585bcab.js",
-    "static/media/AboutUs.png": "/reactTouchSoft/static/media/AboutUs.297d96662ebf3a41596a.png",
-    "static/media/mainBg.jpg": "/reactTouchSoft/static/media/mainBg.9e01321e3e215489a969.jpg",
-    "static/media/veterinarians.png": "/reactTouchSoft/static/media/veterinarians.e2736581d20bb41b09d7.png",
-    "static/media/inTheWildBg.png": "/reactTouchSoft/static/media/inTheWildBg.6ef4a65e5f7bddd784bf.png",
-    "static/media/blog.png": "/reactTouchSoft/static/media/blog.acc12c2d4644d6820db8.png",
-    "static/media/logo.svg": "/reactTouchSoft/static/media/logo.5f8691bd57aad497f947911f4e96470f.svg",
-    "index.html": "/reactTouchSoft/index.html",
-    "main.e2d576a9.css.map": "/reactTouchSoft/static/css/main.e2d576a9.css.map",
-    "main.2585bcab.js.map": "/reactTouchSoft/static/js/main.2585bcab.js.map"
+    "main.css": "/static/css/main.8b1333e2.css",
+    "main.js": "/static/js/main.f66cdf03.js",
+    "static/media/AboutUs.png": "/static/media/AboutUs.297d96662ebf3a41596a.png",
+    "static/media/mainBg.jpg": "/static/media/mainBg.9e01321e3e215489a969.jpg",
+    "static/media/veterinarians.png": "/static/media/veterinarians.e2736581d20bb41b09d7.png",
+    "static/media/inTheWildBg.png": "/static/media/inTheWildBg.6ef4a65e5f7bddd784bf.png",
+    "static/media/blog.png": "/static/media/blog.acc12c2d4644d6820db8.png",
+    "static/media/logo.svg": "/static/media/logo.5f8691bd57aad497f947911f4e96470f.svg",
+    "index.html": "/index.html",
+    "main.8b1333e2.css.map": "/static/css/main.8b1333e2.css.map",
+    "main.f66cdf03.js.map": "/static/js/main.f66cdf03.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2d576a9.css",
-    "static/js/main.2585bcab.js"
+    "static/css/main.8b1333e2.css",
+    "static/js/main.f66cdf03.js"
   ]
 }
