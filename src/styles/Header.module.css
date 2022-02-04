@@ -1,0 +1,12 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 15px;
+  background-color: rgb(224, 224, 224);
+  z-index: 500;
+}
+
+.children {
+  margin-top: 15px;
+}
